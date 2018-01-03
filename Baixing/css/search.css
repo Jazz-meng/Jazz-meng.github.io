@@ -1,0 +1,245 @@
+				html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before,
+	.clearfix:after {       
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+	.clearfix { *zoom:1;} 
+	.clear{
+		clear: both;
+	}
+	body{
+		font-family: Tahoma,Geneva,sans-serif,'宋体';
+	}
+	.wrap{
+		width: 100%;
+	}
+	.head{
+		width: 100%;
+		background-size: 100% 100%;
+		background-image: url(../images/nybanner3.jpg);
+		background-size: 100% 100%;
+	}
+	.headtop{
+		width:1003px;
+		margin: 0 auto;
+	
+	}
+	.headtop_out{
+		width: 100%;
+		background-image: url(../images/nbg.png);
+		border-bottom: 1px solid white;
+	}
+.logo{
+		display: block;
+		margin-left: 10px;
+		float: left;
+		margin-top:23px;
+
+	}
+	.nav{
+		list-style: none;
+		margin-left: 92px;
+		float: left;
+		
+	}
+	.nav>li{
+		float: left;
+		width: 110px;
+		line-height: 90px;
+		text-align: center;
+		position: relative;
+		background-image: url(../images/line.jpg);
+		background-repeat: no-repeat;
+		background-position:right;
+	}
+	.nav>li a{
+		text-decoration: none;
+		font-size: 16px;
+		color: #444444;
+		font-family: 'sans-serif';
+	}
+	.nav>li>a:hover{
+		color: #F64B4B;
+	}
+	.nav>li .list_one{
+		list-style: none;
+		background-color:#f5d6dc;
+		position: absolute;
+		z-index: 2;
+		top: 90px;
+		left:0px;
+		display: none;
+	}
+	.nav>li:hover .list_one{
+		display: block;
+	}
+	.nav>li .list_one li{
+		width: 110px;
+		line-height:30px;
+		text-align: center;
+	}	
+	.nav>li .list_one li a{
+		text-decoration: none;
+		font-size: 12px;
+		color: #cb0d2f;
+	}
+	.nav>li .list_one li a:hover{
+		color:  #444444;
+	}
+	.banner{
+		width: 100%;
+		padding-top: 266px;
+	}
+	.main{
+		width: 1003px;
+		margin: 0 auto;
+		
+	}
+	.main_out{
+		width: 100%;
+		padding-top: 10px;
+	}
+	.main .us{
+		width: 158px;
+		float: left;
+		padding-top: 15px;
+	}
+	.main .us .title{
+		width: 138px;
+		background-image: url(../images/title.jpg);
+		background-repeat: no-repeat;
+		color: white;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 20px;
+	}
+	.main .us .title h1{
+		font-size: 20px;
+		line-height: 16px;
+	}
+	.main .us .title span{
+		font-size: 12px;
+	}
+	.main .companny{
+		width: 812px;
+		float:right;
+	}
+	.main .companny .cp_top{
+		width: 812px;
+		background-image: url(../images/wzbg.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		margin-top: 5px;
+		float: left;
+		margin-bottom: 46px;
+	}
+	.main .companny .cp_top h1{
+		line-height: 37px;
+		color: #c20e31;
+		font-size: 20px;
+		float: left;
+	}
+	.main .companny .cp_top p{
+		float: right;
+		line-height: 37px;
+		color: #a5a6a8;
+		font-size: 12px;
+		margin-right: 3px;
+	}
+	.main .companny .cp_top p a{
+		color: #757269;
+		text-decoration: none;
+	}
+	.main .companny .cp_top p a:hover{
+		color: #c20e31;
+	}
+	.main .companny .cp_top p span{
+		color:  #c20e31;
+	}
+	.main .companny .store{
+		width: 812px;
+		float: left;
+		margin-bottom: 32px;
+	}
+	.main .companny .store span{
+		display: block;
+		font-size: 18px;
+		color: #cb1641;
+		float: left;
+		line-height: 43px;
+		font-weight: bold;
+		margin-left: 35px;
+		padding-left: 50px;
+		background-image: url(../images/store.jpg);
+		background-repeat: no-repeat;
+	}
+	.main .companny .store .city{
+		width: 550px;
+		float: left;
+		height: 43px;
+		line-height: 43px;
+		color: #5b595a;
+		font-size: 12px;
+		margin-left: 54px;
+	}
+	.main .companny .store .city select{
+		width: 148px;
+		height:20px;
+		outline: none;
+		margin-right: 33px;
+		border:1px solid #ccc;
+		font-size: 12px;
+	}
+	.main .companny .adress{
+		width: 807px;
+		height: 120px;
+		border:1px solid #ccc;
+		overflow-y:scroll; 
+		margin-bottom: 25px;
+	}
+	.main .companny .adress ul{
+		list-style: none;
+		float: left;
+		margin-left: 27px;
+		width: 356px;
+		margin-top: 16px;
+		margin-bottom: 5px;
+	}
+	.main .companny .adress ul li{
+		color: #6b625d;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.main .companny .adress ul li:first-child{
+		color: red;
+	}
+	.main .companny .adress ul li a{
+		text-decoration: none;
+		color: #6b625d;
+	}
+	.main .companny>img{
+		margin-bottom:32px; 
+	}
