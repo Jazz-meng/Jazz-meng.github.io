@@ -26,10 +26,14 @@
   <script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
 
   <script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
-
+  <script type="text/javascript" src="./renxi/jquery-3.2.1.min.js"></script>
   <style type="text/css">
     <!-- .STYLE1 {
-      color: #ec0f3e
+      color: #ec0f3e;
+    }
+
+    body {
+      background-color: white;
     }
 
     @keyframes my1 {
@@ -44,6 +48,25 @@
       }
       100% {
         opacity: 1;
+      }
+    }
+
+    @keyframes col {
+      0% {
+        color: blue;
+        text-shadow: 2px 3px 3px pink;
+      }
+      35% {
+        color: green;
+        text-shadow: 3px 4px 4px white;
+      }
+      75% {
+        color: yellow;
+        text-shadow: 2px 3px 3px purple;
+      }
+      100% {
+        color: white;
+        text-shadow: 1px 2px 3px black;
       }
     }
 
@@ -89,11 +112,39 @@
       animation: my1 7s forwards 3s
     }
 
+    .btn {
+      width: 200px;
+      height: 200px;
+      background-image: url(xin.jpg);
+      background-size: cover;
+      text-align: center;
+    }
+
+    .btn span {
+
+      line-height: 200px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 1px 2px 3px black;
+      cursor: pointer;
+    }
+
+    .btn span:hover {
+      animation: col 6s forwards;
+    }
+
     .boxx {
       width: 100%;
       background-image: url(2d.jpg);
       background-repeat: repeat-x;
       padding-top: 200px;
+      display: none;
+    }
+
+    .xxx {
+      width: 100%;
+      height: 1000px;
     }
 
     -->
@@ -173,20 +224,31 @@
 
 
   </div>
-  <div class='boxx'>
-    <img class='one' src="juan.jpg" alt="">
-    <img class='two' src="s.jpg" alt="">
-    <img class='three' src="tyy.jpg" alt="">
-    <img class='four' src="webwxgetmsgimg.jpg" alt="">
-    <img class='five' src="ssddf.jpg" alt="">
-    <img class='six' src="wewew.jpg" alt="">
+  <div class='xxx'>
+
+
+    <div class='btn'>
+      <span>Click !!!</span>
+    </div>
+    <div class='boxx'>
+      <img class='one' src="juan.jpg" alt="">
+      <img class='two' src="s.jpg" alt="">
+      <img class='three' src="tyy.jpg" alt="">
+      <img class='four' src="webwxgetmsgimg.jpg" alt="">
+      <img class='five' src="ssddf.jpg" alt="">
+      <img class='six' src="wewew.jpg" alt="">
+    </div>
   </div>
   <script>
   </script>
 
-
-
   <script>
+    $(document).ready(function() {
+      $(".btn").click(function() {
+        event.preventDefault();
+        $(".boxx").slideToggle(2000);
+      });
+    });
     (function() {
 
       var canvas = $('#canvas');
@@ -498,6 +560,7 @@
 
     })();
   </script>
+
 
 
 
