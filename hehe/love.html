@@ -26,7 +26,7 @@
   <script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
 
   <script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
-  <script type="text/javascript" src="./renxi/jquery-3.2.1.min.js"></script>
+  <!-- <script type="text/javascript" src="./renxi/jquery-3.2.1.min.js"></script> -->
   <style type="text/css">
     <!-- .STYLE1 {
       color: #ec0f3e;
@@ -147,6 +147,92 @@
       height: 1000px;
     }
 
+    .head {
+      width: 100%;
+      height: 100px;
+      display: table;
+      background-image: url(headtop_02.png);
+      background-repeat: repeat-x;
+    }
+
+    .head ul {
+      float: left;
+      list-style: none;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .head ul li {
+      float: left;
+      line-height: 100px;
+      width: 70px;
+
+      text-align: center;
+    }
+
+    .head ul li span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .head ul li:nth-child(1) span {
+      color: pink;
+    }
+
+    .head ul li:nth-child(2) span {
+      color: #00DDAA;
+    }
+
+    .head ul li:nth-child(3) span {
+      color: #EE7700;
+    }
+
+    .head ul li:nth-child(4) span {
+      color: #00DD00;
+    }
+
+    .head ul li:nth-child(5) span {
+      color: #FF00FF;
+    }
+
+    .head ul li:nth-child(6) span {
+      color: #0000CD;
+    }
+
+    .head ul li:nth-child(7) span {
+      color: #ADFF2F;
+    }
+
+    .head ul li:nth-child(8) span {
+      color: teal;
+    }
+
+    .head ul li:nth-child(9) span {
+      color: #B22222;
+    }
+
+    .head ul li:nth-child(10) span {
+      color: #666666;
+    }
+
+    .head ul li:nth-child(12) span {
+      color: red;
+    }
+
+    .head ul .king {
+      background-image: url(king.jpg);
+      background-size: cover;
+      width: 100px;
+    }
+
+    .wrap {
+      width: 100%;
+    }
+
     -->
   </style>
 
@@ -159,84 +245,104 @@
 					<source src="泛泛之辈-大壮-1802019551-0.mp3" type="audio/mp3" />
 
 			</audio>
+  <div class='wrap'>
 
-  <div id="main">
+    <div class='head'>
+      <ul>
+        <li><span>这</span></li>
+        <li><span>是</span></li>
+        <li><span>一</span></li>
+        <li><span>个</span></li>
+        <li><span>属</span></li>
+        <li><span>于</span></li>
+        <li><span>张</span></li>
+        <li><span>娟</span></li>
+        <li><span>的</span></li>
+        <li><span>网</span></li>
+        <li><span>页</span></li>
+        <li><span>❤</span></li>
+        <li class='king'></li>
+      </ul>
+    </div>
 
-    <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+    <div id="main">
 
-    <div id="wrap">
+      <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
 
-      <div id="text">
+      <div id="wrap">
 
-        <div id="code">
+        <div id="text">
 
-          <font color="pink"> <span class="say">女神，我喜欢你，虽然你看不见我对你的告白</span><br>
+          <div id="code">
 
-            <span class="say"> </span><br>
+            <font color="red"> <span class="say">娟儿，缘分真的很奇妙，本来没有任何交集的我们，老天让我们相识。</span><br>
 
-            <span class="say"> 我知道我不会甜言蜜语，但是我会用行动证明一切</span><br>
+              <span class="say"> </span><br>
 
-            <span class="say"> </span><br>
+              <span class="say"> 虽然我们没见过面，但是我已经习惯了和你聊天的日子，一天不找你感觉心里空落落的。</span><br>
 
-
-
-
+              <span class="say"> </span><br>
 
 
 
-            <span class="say">我想抓紧你，可有些东西因为越在乎所以越失去。</span><br>
 
-            <span class="say">你总说陪伴是最长情的告白。</span><br>
 
-            <span class="say">我这告白要有多深情。</span><br>
 
-            <span class="say"> </span><br>
 
-            <span class="say">虽然你看不见我的告白，但是我还是要把这些心里话说出来</span><br>
-            <span class="say"> </span><br>
-            <span class="say">愿你清风明月，山河湖海，皆爱你如我。 </span><br>
-            <span class="say"> </span><br>
-            <span class="say"><span class="space">
-                        <span class="say"> </span><br>
-            <span class="say">我很爱你。❤ </span><br>
-          </font>
-          </p>
+              <span class="say">有的时候吧，你总是忽冷忽热的，都快把我搞疯了。</span><br>
+
+              <span class="say">我知道我很多缺点，又矮又胖，没钱，没能力。</span><br>
+
+              <span class="say">可能咱俩的人生目标不同，我真的只想找个自己喜欢的人，过简单的生活，钱可以慢慢赚，人错过了就可能遇不到了。</span><br>
+
+              <span class="say"> </span><br>
+
+              <span class="say">我不喜欢浓妆艳抹的你刚好是，我喜欢将来能过日子的你也是，我喜欢短发的你还是。</span><br>
+              <span class="say"> </span><br>
+              <span class="say">我喜欢的样子你都有。 </span><br>
+              <span class="say"> </span><br>
+              <span class="say"><span class="space">
+                          <span class="say"> </span><br>
+              <span class="say">不敢盲目说爱，只是很喜欢❤ </span><br>
+            </font>
+            </p>
+
+          </div>
 
         </div>
 
+        <div id="clock-box">
+
+          <span class="STYLE1"></span>
+          <font color="#33CC00">娟儿，我认识你</font>
+
+          <span class="STYLE1">已经是……</span>
+
+          <div id="clock"></div>
+
+        </div>
+
+        <canvas id="canvas" width="1100" height="680"></canvas>
+
       </div>
 
-      <div id="clock-box">
 
-        <span class="STYLE1"></span>
-        <font color="#ff881a">娟儿，我认识你</font>
 
-        <span class="STYLE1">已经是……</span>
+    </div>
+    <div class='xxx'>
 
-        <div id="clock"></div>
 
+      <div class='btn'>
+        <span>Click !!!</span>
       </div>
-
-      <canvas id="canvas" width="1100" height="680"></canvas>
-
-    </div>
-
-
-
-  </div>
-  <div class='xxx'>
-
-
-    <div class='btn'>
-      <span>Click !!!</span>
-    </div>
-    <div class='boxx'>
-      <img class='one' src="juan.jpg" alt="">
-      <img class='two' src="s.jpg" alt="">
-      <img class='three' src="tyy.jpg" alt="">
-      <img class='four' src="webwxgetmsgimg.jpg" alt="">
-      <img class='five' src="ssddf.jpg" alt="">
-      <img class='six' src="wewew.jpg" alt="">
+      <div class='boxx'>
+        <img class='one' src="juan.jpg" alt="">
+        <img class='two' src="s.jpg" alt="">
+        <img class='three' src="tyy.jpg" alt="">
+        <img class='four' src="webwxgetmsgimg.jpg" alt="">
+        <img class='five' src="3232222.jpg" alt="">
+        <img class='six' src="wewew.jpg" alt="">
+      </div>
     </div>
   </div>
   <script>
